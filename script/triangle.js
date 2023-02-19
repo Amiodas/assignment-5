@@ -5,10 +5,11 @@ const triangleHeight = document.getElementById("triangle-height");
 const triangleCalculate = document.getElementById("triangle-area-calculation");
 
 triangleCalculate.addEventListener("click", function () {
-  const areaOfTriangle = 0.5 * parseFloat(triangleBase.value) * parseFloat(triangleHeight.value);
+  const areaOfTriangle =
+    0.5 * parseFloat(triangleBase.value) * parseFloat(triangleHeight.value);
+    
   console.log(triangleBase.value, triangleHeight.value, areaOfTriangle);
-  showResult("Triangle", areaOfTriangle)
+  triangleBase.value = "";
+  triangleHeight.value = "";
+  showResult("Triangle", areaOfTriangle);
 });
-
-
-

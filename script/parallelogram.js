@@ -9,6 +9,12 @@ const parallelogramCalculate = document.getElementById(
 parallelogramCalculate.addEventListener("click", function () {
   const areaOfparallelogram =
     parseFloat(paralleogramBase.value) * parseFloat(paralleogramHeight.value);
-  console.log(paralleogramBase.value, paralleogramHeight.value, areaOfparallelogram);
+  console.log(
+    paralleogramBase.value,
+    paralleogramHeight.value,
+    areaOfparallelogram
+  );
+  paralleogramBase.value = "";
+  paralleogramHeight.value = "";
   showResult("Parallelogram", areaOfparallelogram);
 });

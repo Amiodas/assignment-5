@@ -10,5 +10,8 @@ rectangleCalculate.addEventListener("click", function () {
   const areaOfRectangle =
     parseFloat(rectangleWidth.value) * parseFloat(rectangleHeight.value);
   console.log(rectangleWidth.value, rectangleHeight.value, areaOfRectangle);
+
+  rectangleWidth.value = "";
+  rectangleHeight.value = "";
   showResult("Rectangle", areaOfRectangle);
 });
