@@ -1,15 +1,22 @@
-// const toggleBgColor = document.querySelectorAll(".toggle-bg-color");
+const toggleBgColor = document.querySelector(".toggle-bg-color");
 
-// function randomcolor() {
-//     return Math.floor(Math.random() * 255);
-// }
+function randomcolor() {
+    return Math.floor(Math.random() * 255);
+}
 
-// toggleBgColor.addEventListener("mouseover", function () {
-//   toggleBgColor.style.backgroundColor = "pink";
-//   console.log("card enter");
-// });
+toggleBgColor.addEventListener("mouseover", function () {
+    console.log(toggleBgColor)  
+    toggleBgColor.style.backgroundColor = 'rgb(' + randomcolor() + ',' + randomcolor() + ',' + randomcolor() + ')';
+    console.log("card enter");
+  });
 
-// toggleBgColor.addEventListener("mouseleave", function () {
-//   toggleBgColor.style.backgroundColor = "";
-//   console.log("card leave");
-// });
+// Change color function
+function changeBackgrounColor(cardIndex) {
+  
+}
+
+
+toggleBgColor.addEventListener("mouseleave", function () {
+  toggleBgColor.style.backgroundColor = "";
+  console.log("card leave");
+});

@@ -5,10 +5,10 @@
     background-color: rgb(226, 255, 245);
 }
 
-.card {
+.card-item {
     height: 350px;
 }
-.card img {
+.card-item img {
     width: 100px;
     height: 100px;
 }
