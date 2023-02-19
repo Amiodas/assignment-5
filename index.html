@@ -18,7 +18,10 @@
   </head>
   <body class="m-4">
     <header class="">
-      <nav class="d-flex justify-content-between nav-bg-color rounded-2 py-3 px-5">
+      <!-- Navbar Ui -->
+      <nav
+        class="d-flex justify-content-between nav-bg-color rounded-2 py-3 px-5"
+      >
         <div class="d-flex align-items-center">
           <div>
             <h1 class="mb-0 text-dark">Interactive</h1>
@@ -26,15 +29,64 @@
           </div>
         </div>
         <div class="d-flex align-items-center">
-          <button id="blog-route" class="btn btn-primary fw-semibold px-4">Blog</button>
+          <button id="blog-route" class="btn btn-primary fw-semibold px-4">
+            Blog
+          </button>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="row">
+        <div class="col-8">
+          <div class="row">
+            <!-- Triangle -->
+            <div class="col-4 g-3">
+              <div class="card" id="toggle-bg-color">
+                <div class="d-flex justify-content-center p-4">
+                  <img class="w-75" src="images/triangle.png" alt="Triangle" />
+                </div>
+                <div class="text-center">
+                  <h5>Triangle</h5>
+                  <p>Area (A) = 0.5 X b X h</p>
+                  <div class="d-flex justify-content-center mb-4">
+                    <input
+                      type="number"
+                      name=""
+                      placeholder="b"
+                      id="triangle-base"
+                      class="w-25"
+                    /> 
+                    <span> cm</span>
+                    <input
+                      type="number"
+                      name=""
+                      placeholder="h"
+                      id="triangle-height"
+                      class="w-25"
+                    /><span> cm</span>
+                  </div>
+                </div>
+                <div class="d-grid mx-3 mb-3">
+                    <button id="triangle-area-calculation" class="btn btn-primary block">Calculate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-4 g-3">
+            <div class="card h-50">
+                <h6 class="text-decoration-underline text-center my-3">Area Calculation</h6>
+                <div id="show-result" class="px-3"></div>
+            </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
 
     <!-- Custom script Added -->
     <script src="/script/utilities.js"></script>
+    <script src="/script/card-background-change.js"></script>
     <script src="/script/triangle.js"></script>
     <script src="/script/rectangle.js"></script>
     <script src="/script/parallelogram.js"></script>
