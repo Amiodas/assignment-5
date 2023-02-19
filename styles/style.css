@@ -4,3 +4,8 @@
 .nav-bg-color {
     background-color: rgb(226, 255, 245);
 }
+
+#show-result {
+    height: 400px;
+    overflow-y: scroll;
+}

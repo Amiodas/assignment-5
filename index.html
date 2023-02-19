@@ -41,7 +41,7 @@
           <div class="row">
             <!-- Triangle -->
             <div class="col-4 g-3">
-              <div class="card" id="toggle-bg-color">
+              <div class="card toggle-bg-color">
                 <div class="d-flex justify-content-center p-4">
                   <img class="w-75" src="images/triangle.png" alt="Triangle" />
                 </div>
@@ -62,7 +62,7 @@
                       name=""
                       placeholder="h"
                       id="triangle-height"
-                      class="w-25"
+                      class="w-25 form-control"
                     /><span> cm</span>
                   </div>
                 </div>
@@ -71,13 +71,47 @@
                 </div>
               </div>
             </div>
+
+            <!-- Rectangle -->
+          <div class="col-4 g-3">
+            <div class="card toggle-bg-color">
+              <div class="d-flex justify-content-center p-4">
+                <img class="w-75" src="images/rectangle.png" alt="Rectangle" />
+              </div>
+              <div class="text-center">
+                <h5>Rectangle</h5>
+                <p>Area (A) = h X W </p>
+                <div class="d-flex justify-content-center mb-4">
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="w"
+                    id="rectangle-width"
+                    class="w-25"
+                  /> 
+                  <span> cm</span>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="h"
+                    id="rectangle-height"
+                    class="w-25"
+                  /><span> cm</span>
+                </div>
+              </div>
+              <div class="d-grid mx-3 mb-3">
+                  <button id="rectangle-area-calculation" class="btn btn-primary block">Calculate</button>
+              </div>
+            </div>
+          </div>
+
           </div>
         </div>
         </div>
         <div class="col-4 g-3">
-            <div class="card h-50">
+            <div class="card">
                 <h6 class="text-decoration-underline text-center my-3">Area Calculation</h6>
-                <div id="show-result" class="px-3"></div>
+                <div id="show-result" class="px-3 mb-3"></div>
             </div>
         </div>
       </section>
